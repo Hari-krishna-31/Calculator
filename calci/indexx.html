@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Home</title>
+    <title>Calculator !</title>
     <link rel="stylesheet" href="style2.css">
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-  
- 
     <div class="container">
-      <h2>Calculator !</h2>
+        <h2>Calculator !</h2>
         <fieldset id="container">
             <form name="calculator">
                 <input id="display" type="text" name="display" readonly>
-                <br>
-
-                <input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
-                <input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'">
-                <input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'">
-                <input class="button mathButtons" type="button" value="+" onclick="calculator.display.value += ' + '">
-                <br>
-
-                <input class="button digits" type="button" value="4" onclick="calculator.display.value += '4'">
-                <input class="button digits" type="button" value="5" onclick="calculator.display.value += '5'">
-                <input class="button digits" type="button" value="6" onclick="calculator.display.value += '6'">
-                <input class="button mathButtons" type="button" value="-" onclick="calculator.display.value += ' - '">
-                <br>
-
-                <input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'">
-                <input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'">
-                <input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'">
-                <input class="button mathButtons" type="button" value="x" onclick="calculator.display.value += ' * '">
-                <br>
-
-                <input id="clearButton" class="button" type="button" value="C" onclick="calculator.display.value = ''">
-                <input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
-                <input class="button mathButtons" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
-                <input class="button mathButtons" type="button" value="/" onclick="calculator.display.value += ' / '">
+                <div class="button-row">
+                    <input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
+                    <input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'">
+                    <input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'">
+                    <input class="button mathButtons" type="button" value="+" onclick="calculator.display.value += ' + '">
+                </div>
+                <div class="button-row">
+                    <input class="button digits" type="button" value="4" onclick="calculator.display.value += '4'">
+                    <input class="button digits" type="button" value="5" onclick="calculator.display.value += '5'">
+                    <input class="button digits" type="button" value="6" onclick="calculator.display.value += '6'">
+                    <input class="button mathButtons" type="button" value="-" onclick="calculator.display.value += ' - '">
+                </div>
+                <div class="button-row">
+                    <input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'">
+                    <input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'">
+                    <input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'">
+                    <input class="button mathButtons" type="button" value="x" onclick="calculator.display.value += ' * '">
+                </div>
+                <div class="button-row">
+                    <input id="clearButton" class="button" type="button" value="C" onclick="calculator.display.value = ''">
+                    <input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
+                    <input class="button mathButtons" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+                    <input class="button mathButtons" type="button" value="/" onclick="calculator.display.value += ' / '">
+                </div>
             </form>
         </fieldset>
     </div>
+    <div class="footer">
+        <h3>Done  by  Hari</h3>
+        <div class="icons">
+            <!-- <a href="https://leetcode.com" target="_blank"><i class="fab fa-leetcode"></i></a> -->
+            <a href="https://github.com/Hari-krishna-31" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/hari-krishna31/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
 </body>
-<h3>Done  by Hari  !</h3>
 </html>
