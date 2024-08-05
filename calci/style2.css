@@ -1,25 +1,27 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #eeffd8;
     margin: 0;
-  }
+    position: relative;
+}
 
-  .container {
+.container {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    width: 250px; 
-  }
+    width: 250px;
+}
 
-  #container {
+#container {
     border: none;
     padding: 0;
     margin: 0;
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
 }
 
 #display {
@@ -35,14 +37,19 @@ body {
     margin-bottom: 15px;
 }
 
+.button-row {
+    display: flex;
+    justify-content: space-between;
+}
+
 .button {
-    width: calc(25% - 14px); /* Fit 4 buttons per row with margins */
+    width: calc(25% - 10px); /* Fit 4 buttons per row with margins */
     height: 60px;
     font-size: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin: 5px;
-    background-color: #87cefa; 
+    margin: 5px 1%; /* Adjust margins for proper spacing */
+    background-color: #87cefa;
     color: #333;
     cursor: pointer;
     transition: background-color 0.2s, box-shadow 0.2s;
@@ -80,23 +87,71 @@ body {
     background-color: #87ceeb; /* Even darker cyan when clicked */
 }
 
-.container h2{
-    display: flex;
-    /* margin-left: 20%; */
-    /* padding: 30px; */
-    margin: 50px;
+.container h2 {
+    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:large;
-    color:brown;
+    font-size: large;
+    color: brown;
 }
 
-h3{
-    /* padding-right: 70%; */
-    /* display: flex; */
-    margin-bottom: -600px;
-    /* margin-right: 400px; */
-    /* padding: 20px; */
-    /* color:#87cefa;
-     */
-     color: brown;
+.footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+}
+
+.footer h3 {
+    margin: 0;
+    font-size:larger;
+    /* color: brown; */
+    color:black;
+    margin-right: 35px;
+}
+
+.icons {
+    margin-top: 15px;
+    margin-right: 35px;
+    margin-bottom: 15px;
+    
+}
+
+.icons a {
+    color:#bf13c5;
+    margin-left: 10px;
+    font-size: 34px;
+    transition: color 0.2s;
+}
+
+.icons a:hover {
+    color: #4169e1; /* Change color on hover */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Make container full width on mobile */
+        padding: 10px;
+    }
+
+    .button {
+        width: 22%; /* Adjust width for buttons on mobile */
+        height: 50px; /* Adjust button height for mobile */
+        font-size: 18px; /* Adjust font size for mobile */
+        margin: 3px 1%; /* Reduce margin for better spacing */
+    }
+
+    #display {
+        height: 40px; /* Adjust display height for mobile */
+        font-size: 20px; /* Adjust font size for mobile */
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: medium; /* Adjust heading size for mobile */
+    }
+
+    .footer h3, .icons a {
+        font-size: larger; /* Adjust footer and icons size for mobile */
+    }
 }
