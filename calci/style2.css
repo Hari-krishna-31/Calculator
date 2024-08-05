@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eeffd8;
+    margin: 0;
+  }
+
+  .container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 250px; 
+  }
+
+  #container {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9; 
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+.button {
+    width: calc(25% - 14px); /* Fit 4 buttons per row with margins */
+    height: 60px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #87cefa; 
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background-color: #4682b4; /* Darker blue on hover */
+    color: #fff;
+}
+
+.button:active {
+    background-color: #4169e1; /* Even darker blue when clicked */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.mathButtons {
+    background-color: #f0ad4e; /* Orange background for math buttons */
+    color: #fff;
+}
+
+.mathButtons:hover {
+    background-color: #ec971f; /* Darker orange on hover */
+}
+
+.digits {
+    background-color: #e0ffff; /* Light cyan for digit buttons */
+}
+
+.digits:hover {
+    background-color: #b0e0e6; /* Slightly darker cyan on hover */
+}
+
+.digits:active {
+    background-color: #87ceeb; /* Even darker cyan when clicked */
+}
+
+.container h2{
+    display: flex;
+    /* margin-left: 20%; */
+    /* padding: 30px; */
+    margin: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:large;
+    color:brown;
+}
+
+h3{
+    /* padding-right: 70%; */
+    /* display: flex; */
+    margin-bottom: -600px;
+    /* margin-right: 400px; */
+    /* padding: 20px; */
+    /* color:#87cefa;
+     */
+     color: brown;
+}
